@@ -1,11 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   display: flex;
+  font-family: 'Poppins', sans-serif;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 850px;
+  width: 100vw;
   background-color: rgb(33, 33, 33);
+}
+
+.navbar {
+  position: absolute;
+  padding-block: 1.5rem;
+  height: 90%;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+
+  color: white;
+}
+.link:hover {
+  text-decoration: underline;
 }
 
 #first-planet {
