@@ -117,7 +117,7 @@ img {
 .textarea {
   resize: none;
   height: 10vh;
-  width: 90vw;
+  width: 90%;
 }
 .btn {
   background-color: var(--light-color);
@@ -148,7 +148,7 @@ img {
     grid-template-areas:
       '... logo ... navbar ...'
       '... ... ... title title'
-      '... ... ... ... subtitle'
+      '... ... ... subtitle ... '
       '... quote ... description ... '
       '... ... ... form ...';
   }
@@ -162,6 +162,7 @@ img {
   }
   .navbar {
     grid-area: navbar;
+    width: 100vw;
   }
 
   .link:hover {
@@ -179,15 +180,17 @@ img {
     margin-bottom: 0.5rem;
   }
   .description {
-    font-size: 1vw;
     grid-area: description;
-    max-width: 80%;
+    font-size: 90%;
+    max-width: 60%;
   }
   .form {
     grid-area: form;
+
+    width: 50%;
   }
   .textarea {
-    width: 30vw;
+    max-width: 30vw;
   }
   .vertical-text {
     grid-area: quote;
