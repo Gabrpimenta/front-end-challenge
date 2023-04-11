@@ -21,10 +21,11 @@
           <li>
             <a href="./index.html" class="link">Home</a>
           </li>
+          <li>
             <a href="./planetary-system.html" class="link">Planetary System</a>
           </li>
         </ul>
-      </nav>      
+      </nav>
       <h1 class="title line line-horizontal overflow-hidden">
         <span class="to-right has-in-common" style="--delay: 0s">Universe</span>
       </h1>
@@ -35,8 +36,8 @@
       </h2>
 
       <div class="vertical-text line line-vertical">
-        <div class="overflow-hidden >
-          <span class="to-bottom has-in-common" style="--delay: 0.25s"
+        <div class="overflow-hidden">
+          <span class="to-right has-in-common" style="--delay: 0.25s"
             >We are an impossibility in an impossible universe.
           </span>
         </div>
@@ -51,31 +52,38 @@
           >
         </p>
       </div>
-      <div class="form line line-horizontal">
-        <h2 class="my-2 to-bottom has-in-common" style="--delay: 0.035s" >Get in touch to know more:</h2>
-          <input
-            type="text"
-            class="form-input  has-in-common"
-            name="name"
-            placeholder="Your name"
-            required
-          />
-          <input
-            type="email"
-            class="form-input  has-in-common"
-            name="email"
-            placeholder="Your email"
-            required
-          />
-          <textarea
+      <div id="form" class="form line line-horizontal">
+        <h2 class="my-2 to-bottom has-in-common" style="--delay: 0.035s">
+          Get in touch to know more:
+        </h2>
+        <input
+          id="name"
+          type="text"
+          class="form-input has-in-common"
+          name="name"
+          placeholder="Your name"
+          required
+        />
+        <input
+          id="email"
+          type="email"
+          class="form-input has-in-common"
+          name="email"
+          placeholder="Your email"
+          required
+        />
+        <textarea
+          id="message"
           placeholder="Your message"
-            class="form-input textarea  has-in-common"
-            name="message"
-            rows="2"
-          ></textarea>
-          <div>          
-            <button class="btn  has-in-common">Send</button>
-          </div>
+          class="form-input textarea has-in-common"
+          name="message"
+          rows="2"
+        ></textarea>
+        <div>
+          <button id="submit" type="submit" class="btn has-in-common">
+            Send
+          </button>
+        </div>
       </div>
       <img
         src="./assets/images/planet.png"

@@ -12,6 +12,20 @@ body {
   background-color: rgb(33, 33, 33);
 }
 
+.tracker {
+  position: fixed;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid #d8d8d8;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  opacity: 0;
+  transition: top 0.075s, left 0.075s, opacity 0.5s;
+}
+
 .navbar {
   position: absolute;
   padding-block: 1.5rem;
